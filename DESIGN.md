@@ -2,7 +2,7 @@
 
 Draft. Items marked (ASSUME) are defaults I picked; change them freely.
 
-## Fantasy
+## Story
 
 You are the colony manager of a private breeding and research facility. Your test subjects live in a small colony you keep alive, productive, and (mostly) unharmed. You answer to a funder who wants specific results by specific dates. Tone: dark comedy - corporate euphemisms, absurd memos, subjects with personalities.
 
@@ -10,10 +10,10 @@ You are the colony manager of a private breeding and research facility. Your tes
 
 - Colony Manager (player)
 - Funder (sets goals, provides funds, sends e-mails)
-- animal keeper (upgrade, takes care of a **needs** of animals in **one** room)
-- mad scientist (screws up everything)
-- lazy co-worker (makes player's tasks slower)
-- bureaucrat (demands silly paperwork)
+- Animal Keeper (upgrade, takes care of a **needs** of animals in **one** room)
+- Mad Scientist (screws up everything)
+- Lazy Co-Worker (makes player's tasks slower)
+- Bureaucrat (demands silly paperwork)
 
 ## Core loop (about 30 seconds)
 
@@ -27,7 +27,8 @@ You are the colony manager of a private breeding and research facility. Your tes
 
 Anything that does not serve one of these is cut.
 
-1. **Needs** - subjects have food, water, health, morale, stress. Neglect has visible consequences.
+1. **Needs** - basic: subjects have food, water
+             - extended: health, morale, stress. Neglect has visible consequences.
 2. **Experiments** - risk/reward actions that earn funds and results but cost subjects' wellbeing.
 3. **Oversight** - the funder sets goals with deadlines and sends welfare inspections. The welfare ruleset grows with each level. Cutting corners works until it does not.
 4. **Breeding** - subjects carry genes; offspring inherit by Mendelian rules; funder goals demand specific genotypes or phenotypes in specific numbers at specific times.
@@ -62,8 +63,9 @@ Anything that does not serve one of these is cut.
 -- food and water
 -- cleanness of cage
 -- max density per cage
--- enrichment and a stress cap
--- cull limits and a cap on defect-carrying litters. 
+-- enrichment and a stress: high stress can lead to unwanted behavior -> event
+-- male rivalry: punished by fight injuries if lasts to long -> event
+-- cull limits and a cap on defect-carrying litters.
 -- ethics-review paperwork costs time and funds.
 - Core tension: deadline pressure pushes toward overcrowding and inbreeding; welfare rules punish exactly that.
 - Moral consequence is systemic (inspections, trust, morale), or narrated judgment by funder.
@@ -77,7 +79,7 @@ Anything that does not serve one of these is cut.
 ## Resources
 
 - Food & Water: consumed per subject per tick.
-- Funds: earned from experiments and goal payouts, spent on rooms and upgrades.
+- Funds: earned from subjects delivered to experiments and goal payouts, spent on rooms and upgrades.
 - Results: a score from experiments, feeding goal progress where relevant.
 - Genetic stock: the lines and strains you currently hold.
 - Capacity: cage and room space, limits cohort and population size.
@@ -87,13 +89,48 @@ Anything that does not serve one of these is cut.
 - Flies (cohorts): count per genotype, shared stats, no names.
 - Higher species (individuals): name, 3 stats (health, morale, stress), genotype and phenotype, 1-2 traits (e.g. Stubborn, Curious) that modify jobs, events, or relationships. Subjects can die. Death matters to morale of the rest.
 
+## Events
+
+- Mad Scientist
+-- takes a breeding couple away
+-- botches experiment -> needs the same amount of animals quickly
+- Lazy Co-Worker
+-- turns up and blocks the way to a rack
+- Bureaucrat
+-- demands experiment proposal
+-- list of animals
+- Animal Keeper
+-- calls in sick
+-- mixes up males and females
+-- forget to feed
+- Environment
+-- diseases
+-- some Welfare rules have direct effects
+
+## Upgrades
+
+- cages
+- racks
+- rooms
+- "edward river" catalog -> enables buying subjects
+- internal market -> sell subjects
+- animal keeper -> care for basic needs per rack
+- animal db -> list view of animals
+- freezer -> can store embryos, ovule, sperm
+
 ## Levels
+
+### 0. Intro
+
+- Application accepted
+- Job as animal keeper
 
 ### 1. Fruit Flies
 
 - need 100 by end of week. if not reached by end of week decreasing returns (100 go away at end of week or when 102 are reached. rest is carried over)
 - need 100 more in 3 days (not doable. buy them from vendor catalog. first buy a vendor catalog. vendor name "edward river")
 - need 500 in two weeks (buy more cages, potentially more flies to top up males or females for optimal proportion)
+- promotion to colony manager, funder presents sash for "job well done"
 
 ### 2. Mice
 
