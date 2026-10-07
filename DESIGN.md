@@ -99,10 +99,14 @@ Anything that does not serve one of these is cut.
 - Bureaucrat
 -- demands experiment proposal
 -- list of animals
+-- demands compliance course
 - Animal Keeper
 -- calls in sick
 -- mixes up males and females
 -- forget to feed
+- catalog 
+-- discontinued genetic line
+-- shipping delayed 
 - Environment
 -- diseases
 -- some Welfare rules have direct effects
