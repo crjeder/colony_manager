@@ -3,7 +3,7 @@
 Draft. Items marked (ASSUME) are defaults I picked; change them freely.
 
 ## Fantasy
-You are the director of a private breeding and research facility. Your test subjects live in a small colony you keep alive, productive, and (mostly) unharmed. You answer to a funder who wants specific results by specific dates. (ASSUME) Tone: dark comedy - corporate euphemisms, absurd memos, subjects with personalities.
+You are the director of a private breeding and research facility. Your test subjects live in a small colony you keep alive, productive, and (mostly) unharmed. You answer to a funder who wants specific results by specific dates. Tone: dark comedy - corporate euphemisms, absurd memos, subjects with personalities.
 
 ## Core loop (about 30 seconds)
 1. Observe: check subject needs, resources, and the funder goal deadline.
@@ -21,7 +21,7 @@ Anything that does not serve one of these is cut.
 
 ## Species and progression
 - Start: fruit flies (Drosophila). Short generation time, cheap, large cohorts, teaches Mendel with few loci.
-- (ASSUME) Ladder: flies -> mice -> rats -> rabbits or zebrafish. Each tier has longer generation time, higher cost, smaller litters, individually named subjects, stricter welfare rules, and bigger payouts.
+- (ASSUME) Ladder: flies -> mice -> rats -> rabbits or zebrafish. Each tier has longer generation time, higher cost, smaller litters, individually tracked subjects, stricter welfare rules, and bigger payouts.
 - (ASSUME) New species unlock by level (clearing the funder goal chain earns trust). Funds buy upgrades inside a level: cage capacity, breeding speed, rooms.
 - Each run is a ladder of 4-6 levels, about 5-8 minutes each.
 
@@ -29,7 +29,7 @@ Anything that does not serve one of these is cut.
 - Each subject has 2-4 loci (ASSUME), two alleles each. Alleles are dominant or recessive. Phenotype is derived from genotype.
 - Offspring get one random allele from each parent per locus (Mendel). The player sees a Punnett preview for a chosen pairing; reading it is the core skill.
 - (ASSUME) Phenotypes map to gameplay: eye colour (goal marker), hardiness (health), docility (stress), fertility (litter size). Recessive defect alleles cause inbreeding risk, so narrow gene pools are punished.
-- Flies are tracked as cohorts: a count per genotype, no names, offspring drawn by expected ratios with sampling noise. Higher species are individuals with explicit genotypes and names.
+- Flies are tracked as cohorts: a count per genotype, no names, offspring drawn by expected ratios with sampling noise. Higher species are individuals with explicit genotypes.
 - (ASSUME) The player picks breeding pairs or cohorts; no auto-breeding.
 - v1: 2 traits, 1 locus each, complete dominance. Later: incomplete dominance, linked loci, mutation events.
 
@@ -42,11 +42,11 @@ Anything that does not serve one of these is cut.
 - The ruleset is cumulative; each inspection checks every active rule.
 - (ASSUME) Ramp: L1 food and water only. L2 max density per cage. L3 enrichment and a stress cap. L4 cull limits and a cap on defect-carrying litters. L5 ethics-review paperwork costs time and funds.
 - Core tension: deadline pressure pushes toward overcrowding and inbreeding; welfare rules punish exactly that.
-- (ASSUME) Moral consequence is systemic only (inspections, trust, morale), never narrated judgment.
+- Moral consequence is both systemic (inspections, trust, morale) and delivered as puns in the funder's messages.
 
 ## Win / lose
 - Lose: all subjects dead, or funds below zero past a grace period, or a failed welfare inspection, or too many missed funder goals (ASSUME).
-- Win: (ASSUME) clear the final level's funder goal. No endless mode in v1.
+- Win: reach the goal(s) set by the funder; clearing the final level's goal ends the run. No endless mode in v1.
 - Each run is short (20-40 min) and restartable.
 
 ## Resources
@@ -57,19 +57,18 @@ Anything that does not serve one of these is cut.
 - Capacity: cage and room space, limits cohort and population size.
 
 ## Subjects
-- Flies (cohorts): count per genotype, shared stats, no names.
-- Higher species (individuals): name, 3 stats (health, morale, stress), genotype and phenotype, 1-2 traits (e.g. Stubborn, Curious) that modify jobs, events, or relationships. Subjects can die. Death matters to morale of the rest.
+- Subjects are numbers by default. Names are an upgrade that raises morale.
+- Flies (cohorts): count per genotype, shared stats, never named.
+- Higher species (individuals): number (name once upgraded), 3 stats (health, morale, stress), genotype and phenotype, 1-2 traits (e.g. Stubborn, Curious) that modify jobs, events, or relationships. Subjects can die. Death matters to morale of the rest.
 
 ## Scope
-**v1 (vertical slice):** flies only, food + funds, 1 room, 1 breeding trait, 1 funder goal with deadline, 1-2 welfare rules, 3 random events, starvation lose condition. Already built: starvation only.
+**v1 (vertical slice):** flies only, food + funds, 1 room, cages, 1 job, 1 breeding trait, 1 funder goal with deadline, 1-2 welfare rules, 3 random events, starvation lose condition. Already built: starvation only.
 **v1 full:** 2-3 species, about 6 levels, 4-6 traits, 3-4 rooms, experiments, data-driven events (about 30), funder goals and inspections, save/export.
 
 ## Non-goals
 Multiplayer, accounts, backend, art pipeline (text/DOM UI only), mobile-first layout, endless mode, localization, full real-genetics fidelity (linkage maps, polygenic traits).
 
 ## Open questions
-- Is the player ever punished morally by the game, or is it purely systemic? (Systemic assumed.)
-- Do subjects have visible names/portraits, or are they numbers? (Cohorts numbered, individuals named.)
 - Real-time ticks or pausable with speed controls? (Pause + speed assumed.)
 - Can the player cull subjects, and is it penalised?
 - Are species unlocked by level only, or can they also be bought early?
