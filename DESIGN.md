@@ -27,7 +27,7 @@ You are the colony manager of a private breeding and research facility. Your tes
 
 Anything that does not serve one of these is cut.
 
-1. **Needs** - subjects have food, health, morale, stress. Neglect has visible consequences.
+1. **Needs** - subjects have food, water, health, morale, stress. Neglect has visible consequences.
 2. **Experiments** - risk/reward actions that earn funds and results but cost subjects' wellbeing.
 3. **Oversight** - the funder sets goals with deadlines and sends welfare inspections. The welfare ruleset grows with each level. Cutting corners works until it does not.
 4. **Breeding** - subjects carry genes; offspring inherit by Mendelian rules; funder goals demand specific genotypes or phenotypes in specific numbers at specific times.
@@ -41,6 +41,7 @@ Anything that does not serve one of these is cut.
 
 ## Breeding and genetics
 
+- Each species has male and female individuals and an optimal proportion m/f for reproduction.
 - Each subject has 2-4 loci, two alleles each. Alleles are dominant or recessive. Phenotype is derived from genotype.
 - Offspring get one random allele from each parent per locus (Mendel). The player sees a Punnett preview for a chosen pairing; reading it is the core skill.
 - (ASSUME) Phenotypes map to gameplay: eye colour (goal marker), hardiness (health), docility (stress), fertility (litter size). Recessive defect alleles cause inbreeding risk, so narrow gene pools are punished.
@@ -86,9 +87,21 @@ Anything that does not serve one of these is cut.
 - Flies (cohorts): count per genotype, shared stats, no names.
 - Higher species (individuals): name, 3 stats (health, morale, stress), genotype and phenotype, 1-2 traits (e.g. Stubborn, Curious) that modify jobs, events, or relationships. Subjects can die. Death matters to morale of the rest.
 
+## Levels
+
+### 1. Fruit Flies
+
+- need 100 by end of week. if not reached by end of week decreasing returns (100 go away at end of week or when 102 are reached. rest is carried over)
+- need 100 more in 3 days (not doable. buy them from vendor catalog. first buy a vendor catalog. vendor name "edward river")
+- need 500 in two weeks (buy more cages, potentially more flies to top up males or females for optimal proportion)
+
+### 2. Mice
+
+- need 10 albinos within 12 weeks
+
 ## Scope
 
-**v1 (vertical slice):** flies only, food + funds, 1 room, 1 breeding trait, 1 funder goal with deadline, 1-2 welfare rules, 3 random events, starvation lose condition. Already built: starvation only.
+**v1 (vertical slice):** flies only, food + funds, 1 room, no breeding trait, 1 funder goal with deadline, no welfare rules, 1 random event, starvation lose condition.
 **v1 full:** 2-3 species, about 6 levels, 4-6 traits, 3-4 rooms, experiments, data-driven events (about 30), funder goals and inspections, save/export.
 
 ## Non-goals
@@ -97,7 +110,7 @@ Multiplayer, accounts, backend, art pipeline (text/DOM UI only), mobile-first la
 
 ## Open questions
 
-- Is the player ever punished morally by the game, or is it purely systemic? (Systemic assumed and in punny e-mails form other characters)
+- Is the player ever punished morally by the game, or is it purely systemic? (Systemic and in punny e-mails form other characters)
 - Do subjects have visible names/portraits, or are they numbers? (Cohorts numbered, individuals named, but naming is a upgrade which is good for morale.)
 - Real-time ticks or pausable with speed controls? (Pause + speed.)
 - Can the player cull subjects, and is it penalised? (yes, penalties start with 0 and raise by species. selling is an other option. there will be an internal marketplace from level 2 on as buyable upgrade.)
