@@ -3,7 +3,7 @@
 Draft. Items marked (ASSUME) are defaults I picked; change them freely.
 
 ## Fantasy
-You are the director of a private research facility. Your test subjects live in a small colony you keep alive, productive, and (mostly) unharmed. You answer to a funder who wants results. (ASSUME) Tone: dark comedy - corporate euphemisms, absurd memos, subjects with personalities.
+You are the director of a private research facility. Your test subjects live in a small colony you keep alive, productive, and (mostly) unharmed. You answer to a funder who wants results. Tone: dark comedy - corporate euphemisms, absurd memos, subjects with personalities.
 
 ## Core loop (about 30 seconds)
 1. Observe: check subject needs and resources.
@@ -19,8 +19,8 @@ Anything that does not serve one of these is cut.
 3. **Oversight** - the funder sets quotas and sends inspections. Cutting corners works until it does not.
 
 ## Win / lose
-- Lose: all subjects dead, or funds below zero past a grace period, or a failed inspection (ASSUME).
-- Win: (ASSUME) survive N days while meeting the final quota. No endless mode in v1.
+- Lose: all subjects dead, or funds below zero past a grace period, or a failed inspection.
+- Win: reach goal(s) set by funder. No endless mode in v1.
 - Each run is short (20-40 min) and restartable.
 
 ## Resources
@@ -32,13 +32,13 @@ Anything that does not serve one of these is cut.
 Name, 3 stats (health, morale, stress), 1-2 traits (e.g. Stubborn, Curious) that modify jobs, events, or relationships. Subjects can die. Death matters to morale of the rest.
 
 ## Scope
-**v1 (vertical slice):** 3 subjects, food + funds, 1 room, 1 job, 3 random events, starvation lose condition. Already built: starvation only.
+**v1 (vertical slice):** food + funds, 1 room, cages, 1 job, 3 random events, starvation lose condition. Already built: starvation only.
 **v1 full:** traits, 3-4 rooms, experiments, data-driven events (about 30), quotas and inspections, save/export.
 
 ## Non-goals
 Multiplayer, accounts, backend, art pipeline (text/DOM UI only), mobile-first layout, endless mode, localization.
 
 ## Open questions
-- Is the player ever punished morally by the game, or is it purely systemic?
-- Do subjects have visible names/portraits, or are they numbers? (Names assumed.)
+- Is the player ever punished morally by the game, or is it purely systemic? yes, pun in the funders messages.
+- Do subjects have names? numbers. names are an upgrade which raises morale
 - Real-time ticks or pausable with speed controls? (Pause + speed assumed.)
