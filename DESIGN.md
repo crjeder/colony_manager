@@ -110,6 +110,9 @@ Anything that does not serve one of these is cut.
 - Environment
 -- diseases
 -- some Welfare rules have direct effects
+-- subjects escape
+-- construction work
+-- flooding
 
 ## Upgrades
 
@@ -121,6 +124,7 @@ Anything that does not serve one of these is cut.
 - animal keeper -> care for basic needs per rack
 - animal db -> list view of animals
 - freezer -> can store embryos, ovule, sperm
+- gene sequencing equipment -> cheaper and faster gene tests
 
 ## Levels
 
