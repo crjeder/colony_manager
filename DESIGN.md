@@ -149,6 +149,10 @@ Anything that does not serve one of these is cut.
 
 Multiplayer, accounts, backend, art pipeline (text/DOM UI only), mobile-first layout, endless mode, localization, full real-genetics fidelity (linkage maps, polygenic traits).
 
+## Similar Games
+
+https://store.steampowered.com/app/4435150/Rat_Overflow
+
 ## Open questions
 
 - Is the player ever punished morally by the game, or is it purely systemic? (Systemic and in punny e-mails form other characters)
